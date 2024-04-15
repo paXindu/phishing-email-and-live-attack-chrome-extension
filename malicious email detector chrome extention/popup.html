@@ -1,0 +1,66 @@
+<!-- popup.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Popup</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        width: 300px;
+      }
+
+      .container {
+        background-color: #f8f8f8;
+        padding: 20px;
+        border: 1px solid #e4e4e4;
+        border-radius: 4px;
+      }
+    </style>
+
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-2xl mb-4">eDIVE</h1>
+      <div id="output" class="mb-4"></div>
+      <button
+        id="scanEmailButton"
+        class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mr-2"
+      >
+        Scan Email
+      </button>
+      <button
+        id="readURLButton"
+        class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Read URL
+      </button>
+      <button
+        id="scanXSSButton"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2"
+      >
+        Scan XSS
+      </button>
+      <button
+        id="scanSQLButton"
+        class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mr-2"
+      >
+        Scan SQL
+      </button>
+      <button
+        id="scanCSRFButton"
+        class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Scan CSRF
+      </button>
+
+      <div id="serverResponse" class="mt-4 text-gray-700"></div>
+      <div id="serverResponses" class="mt-4 text-gray-700"></div>
+    </div>
+  </body>
+</html>

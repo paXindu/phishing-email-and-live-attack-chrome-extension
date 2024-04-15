@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "eDIVE",
+  "version": "1.0",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": "popup.js",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' http://127.0.0.1:5000; object-src 'self'"
+  }
+}
